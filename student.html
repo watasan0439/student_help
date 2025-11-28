@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学生お助け隊</title>
+  <link rel="icon" href="help.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ナビバー -->
+  <nav class="navbar">
+    <a href="#top" class="logo">
+      <img src="help.ico" class="logo-icon" alt="logo">
+      <span>学生お助け隊</span>
+    </a>
+
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <div class="menu" id="menu">
+      <a href="#top">TOP</a>
+      <a href="aisatu.html">代表挨拶</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScMQcW6S6odXf4B9ASHqVOenM6FMjQCA2flcFGw11XenRZq_A/viewform"
+        class="contact" target="_blank">お問い合わせ</a>
+    </div>
+  </nav>
+
+  <!-- TOP -->
+  <section id="top" class="hero">
+    <div class="overlay">
+      <h1>学生お助け隊</h1>
+      <p>ようこそ！学生お助け隊の公式ページです。私たちは地域の皆さんの生活をサポートしています。</p>
+    </div>
+  </section>
+
+  <!-- 本文 -->
+  <main>
+    <!-- お助け隊セクションなど（先ほど作った内容） -->
+    <section id="help">
+      <h2>1. 企画の概要</h2>
+      <p>地域の高齢者や外出が困難な方を中心に、日常生活の中で困りごとを抱える住民を、学生がサポートする活動を企画しています。身体的な介護ではなく、生活支援や交流を目的とした地域貢献活動です。</p>
+      <h2>2. 目的</h2>
+      <ul>
+        <li>地域住民の「ちょっとした困りごと」を支援し、安心して暮らせる地域づくりに貢献する。</li>
+        <li>学生が地域と関わることで、福祉への理解を深め、社会経験を積む機会とする。</li>
+        <li>高齢者の孤立防止や地域交流の促進を図る。</li>
+      </ul>
+      <h2>3. 活動内容（想定）</h2>
+      <div class="card-container">
+        <div class="card">
+          <i class="fas fa-shopping-cart card-icon"></i>
+          <h3>買い物代行</h3>
+          <p>食料品や日用品の購入代行、付き添い。</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-broom card-icon"></i>
+          <h3>家事支援</h3>
+          <p>掃除、洗濯、片付けなど軽作業の手伝い。</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-walking card-icon"></i>
+          <h3>外出補助</h3>
+          <p>病院・公共施設への同行（見守り含む）。</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-trash card-icon"></i>
+          <h3>ゴミ出し支援</h3>
+          <p>分別や集積場への持ち運びの補助。</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-comments card-icon"></i>
+          <h3>話し相手・交流</h3>
+          <p>短時間の訪問や会話などの交流活動。</p>
+        </div>
+      </div>
+
+      <h2>4. 対象者（想定）</h2>
+      <p>北区内在住で、日常生活の中で一部支援が必要な高齢者・障がい者・一人暮らしの方など。身体介護が不要で、学生による支援で十分対応できる範囲の方。</p>
+
+      <h2>5. 期待される効果</h2>
+      <ul>
+        <li>高齢者や地域住民の生活の質（QOL）の向上。</li>
+        <li>学生の社会参加・地域理解の促進。</li>
+        <li>地域全体の助け合い意識の向上と、福祉教育の実践的な機会の創出。</li>
+      </ul>
+
+      <h2>6. 相談</h2>
+      <p>生活支援の需要や学生ボランティアに関する相談は、お問い合わせフォームよりご連絡ください。</p>
+    </section>
+  </main>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const menu = document.getElementById("menu");
+    hamburgerBtn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代表挨拶 - 学生お助け隊</title>
+  <link rel="icon" href="help.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ナビバー -->
+  <nav class="navbar">
+    <a href="student.html" class="logo">
+      <img src="help.ico" class="logo-icon" alt="logo">
+      <span>学生お助け隊</span>
+    </a>
+
+    <button class="hamburger" id="hamburgerBtn">☰</button>
+
+    <div class="menu" id="menu">
+      <a href="student.html#top">TOP</a>
+      <a href="aisatu.html">代表挨拶</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScMQcW6S6odXf4B9ASHqVOenM6FMjQCA2flcFGw11XenRZq_A/viewform"
+        class="contact" target="_blank">お問い合わせ</a>
+    </div>
+  </nav>
+
+  <section id="top" class="hero">
+    <div class="overlay">
+      <h1>代表挨拶</h1>
+      <p>学生お助け隊の活動をご支援いただき、ありがとうございます。</p>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <h2>代表者紹介</h2>
+      <img src="kotaro.jpg" alt="代表者の写真" style="width:200px; border-radius:12px; margin-bottom:20px;">
+      <p>皆さま、こんにちは。
+        学生お助け隊代表を、務めております、倉知幸太郎です。私たちは、立命館大学の2回生を中心とした学生ボランティア団体です。地域の方々のちょっとした困り事に対して支援し、皆さまの日常をお助けします。また、学生と地域の皆様との交流を活性化し、地域貢献と地域活性化をめざします。
+        私たちの活動で、皆さまの日常が少しでも良いものになればうれしいです！
+
+        どうぞよろしくお願いします。</p>
+    </section>
+  </main>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const menu = document.getElementById("menu");
+    hamburgerBtn.addEventListener("click", () => {
+      menu.classList.toggle("open");
+    });
+  </script>
+</body>
+
+</html>
